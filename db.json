@@ -1,0 +1,12 @@
+{
+  "contacts": [
+    { "id": 1, "username": "Игорь", "description": "Тестовое описание", "telephone": "+7 999 999-999" },
+    { "id": 2, "username": "Дмитрий", "description": "Тестовое описание", "telephone": "+7 999 888-888" },
+    { "id": 3, "username": "Василий", "description": "Тестовое описание", "telephone": "+7 999 777-777" }
+  ],
+  "users": [
+    {
+      "id": 1, "username": "Test", "password": "123"
+    }
+  ]
+}

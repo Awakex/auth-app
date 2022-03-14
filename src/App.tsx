@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "react-toastify/dist/ReactToastify.css";
+import "./App.css";
+import AuthControl from "./components/AuthControl";
+import { ToastContainer } from "react-toastify";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AppRouter from "./components/AppRouter";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <AuthControl />
+            <AppRouter />
+            <ToastContainer position={"bottom-left"} />
+        </BrowserRouter>
+    );
 }
 
 export default App;
